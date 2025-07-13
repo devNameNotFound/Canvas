@@ -68,4 +68,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
 # Canvas
+
+Create a .env file and write down the server domain and port that the client will talk to. Remember to write "REACT_APP" for it to work! 
+
+### `REACT_APP_PLACEHOLDER=domain`
