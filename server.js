@@ -52,6 +52,16 @@ app.post("/api/registrera-betyg", (req, res) => {
   });
 });
 
+app.get("/api/betyg", (req, res) => {
+  db.all("SELECT * FROM studieresultat", [], (err, rows) => {
+    if (err) {
+      console.error("Fel vid hämtning av betyg:", err.message);
+      return res.status(500).json({ error: "Kunde inte hämta betyg." });
+    }
+    res.json(rows);
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`Servern körs på http://localhost:${PORT}`);
 });
